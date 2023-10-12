@@ -49,9 +49,7 @@ The original paper and code of RDN can be found in following links:
 
 [Paper](https://ieeexplore.ieee.org/document/8964437) | [Code](https://github.com/yulunzhang/RDN)
 
-Before training, you should first prepare a CSV file containing four columns: series, LQ, HQ, slice, 
-
-where 
+Before training, you should first prepare a CSV file and put it under Image-Denoising-for-ECV-Quantification/csv/ directory. This CSV file should contain four columns: series, LQ, HQ, slice, where these columns should contain the following information:
 
 series - the series uid of corresponding volumetric data
 
@@ -68,7 +66,7 @@ To initalize the training process, you can run following line in your terminal
 python RDN/train.py
 ```
 
-Again, default configurations were set to reproduce the model evalutated in our paper. Feel free to change try any modifications in configs during training.
+Again, default configurations were set to reproduce the model evalutated in our paper. Feel free to try any modifications in configs during training.
 
 ## Data Availability
 
